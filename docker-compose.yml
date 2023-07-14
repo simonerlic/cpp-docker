@@ -1,0 +1,8 @@
+version: '3'
+services:
+    cpp-environment:
+      image: "mcr.microsoft.com/devcontainers/cpp"
+      volumes:
+        - ../assignments:/home/assignments/
+      command: sleep infinity
+      container_name: cpp-development
